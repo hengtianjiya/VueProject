@@ -1,0 +1,50 @@
+
+.row:before, 
+.row:after {
+    display: table;
+    content: ' ';
+}
+
+.row:after {
+    clear: both;
+}
+.row > [class*='col-'] {
+	float: left;
+	min-height: 1px;
+}
+.col-1{
+	width: @col-1;
+}
+.col-2{
+	width: @col-2;
+}
+.col-3{
+	width: @col-3;
+}
+.col-4{
+	width: @col-4;
+}
+.col-5{
+	width: @col-5;
+}
+.col-6{
+	width: @col-6;
+}
+.col-7{
+	width: @col-7;
+}
+.col-8{
+	width: @col-8;
+}
+.col-9{
+	width: @col-9;
+}
+.col-10{
+	width: @col-10;
+}
+.col-11{
+	width: @col-11;
+}
+.col-12{
+	width: @col-12;
+}

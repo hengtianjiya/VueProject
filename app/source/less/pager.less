@@ -1,0 +1,63 @@
+.pager{
+	text-align: center;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	ul{
+		display: inline-block;
+		li{
+			float: left;
+			font-size: @pager-font-size;
+			line-height: @pager-line-height; 
+			margin-right: @pager-btn-gap;
+			&.pager-btn{
+				position: relative;
+				width: @pager-btn-width;
+				height: @pager-btn-height;
+				border:1px solid @pager-border-color;
+				&:hover{
+					background-color: @pager-hover-color;
+				}
+				&.pager-previous{
+					&:before{
+						position: absolute;
+						content: "\e614";
+						width: 40/96rem;
+						left: 0;
+						top: 0;
+					}
+				}
+				&.pager-next{
+					&:before{
+						position: absolute;
+						content: "\e615";
+						width: 40/96rem;
+						left: 0;
+						top: 0;
+					}
+				}
+				>a{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+				}
+			}
+			&.pager-input{
+				width: @pager-input-width;
+				height: @pager-input-height;
+				input{
+					display: inline-block;
+					width: 100%;
+				}
+			}
+			&.pager-jump{
+				button{
+					width: 80/96rem;
+					border-radius: 0;
+				}
+			}
+		}
+	}
+}

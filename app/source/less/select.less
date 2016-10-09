@@ -1,0 +1,147 @@
+.form-control-select
+{
+    position: relative;
+}
+.form-control-select-input
+{
+    position: relative;
+
+    cursor: pointer;
+    input{
+        width: 100%;
+    }
+}
+.form-control-select-input > input.form-control
+{
+    padding-right: 30/96rem;
+
+    cursor: pointer;
+}
+.form-control-select-input > i
+{
+    font-size: 12/96rem;
+    font-style: normal;
+
+    position: absolute;
+    top: 0;
+    line-height: 40/96rem;
+    right: 8/96rem;
+
+    display: block;
+
+    width: 18/96rem;
+
+    text-align: center;
+
+    color: #555;
+}
+.form-select-inline .form-control-select-input input.form-control
+{
+    width: auto;
+}
+.form-control-select-delete
+{
+    font-size: 20/96rem;
+
+    position: absolute;
+    top: 12%;
+    right: 28/96rem;
+
+    display: none;
+
+    cursor: pointer;
+
+    .delete-icon{
+        line-height: 40/96rem;
+    }
+}
+.form-control-select-wrap
+{
+    position: absolute;
+    z-index: 999;
+    top: 42/96rem;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+
+    border: 1/96rem solid #ccc;
+    border-top: none;
+    background-color: #fff;
+}
+.form-control-select-search
+{
+    position: relative;
+
+    padding: 2/96rem;
+}
+.form-control-select-search > input.form-control
+{
+    width: 100%;
+    padding-right: 30/96rem;
+}
+.form-control-select-search > i
+{
+    font-size: 17/96rem;
+    font-style: normal;
+
+    position: absolute;
+    top: 59%;
+    right: 0;
+
+    width: 30/96rem;
+    margin-top: -15/96rem;
+
+    text-align: center;
+
+    color: #555;
+}
+.form-control-select-dialog
+{
+    overflow-y: scroll;
+
+    width: 100%;
+    max-height: 300/96rem;
+}
+.form-control-select-loading,
+.form-control-select-none,
+.form-control-select-history-none
+{
+    line-height: 20/96rem;
+
+    display: none;
+
+    text-align: center;
+}
+.form-control-select-result
+{
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+.form-control-select-result > li
+{
+    line-height: 20/96rem;
+
+    padding: 3/96rem 5/96rem;
+
+    cursor: pointer;
+}
+.form-control-select-result > li > em
+{
+    font-weight: bold;
+    font-style: normal;
+
+    color: #428bca;
+}
+.form-control-select-result > li:hover
+{
+    color: #fff;
+    background-color: #428bca;
+}
+.form-control-select-result > li:hover > em
+{
+    color: #fff;
+}

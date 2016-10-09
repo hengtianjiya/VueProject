@@ -1,0 +1,25 @@
+.modal{
+	position: fixed;
+	z-index: @modal-index;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	background-color: @modal-color;
+	.modal-content{
+		z-index: 10;
+		position: absolute;
+		width: 50%;
+		height: 120%;
+		left: 25%;
+		top: 90/96rem;
+		margin-bottom : 70/96rem;
+		background-color: #fff;
+		-webkit-box-shadow: 0 3/96rem 9/96rem rgba(0,0,0,.5);
+		box-shadow: 0 3/96rem 9/96rem rgba(0,0,0,.5);
+	}
+	&.active{
+		display: block;
+	}
+}

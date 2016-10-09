@@ -1,0 +1,71 @@
+.form-group{
+	height: auto;
+	overflow: hidden;
+	margin-bottom:15/96rem;
+	.form-label{
+		text-align: right;
+		height: @form-label-height;
+		line-height: @form-label-height;
+		padding: 0 14/96rem;
+		font-size: 14/96rem;
+		.require{
+			color: #ff0000;
+		}
+	}
+	.form-input,
+	.form-select,
+	.form-textarea{
+		height: @form-inputout-height;
+		line-height: @form-inputout-height;
+		padding: 0 14/96rem;
+		input,
+		select,
+		textarea{
+			width: 100%;
+		}
+		
+	}
+	.form-textarea{
+		height: 130/96rem;
+		textarea{
+			height: 130/96rem;
+		}
+	}
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]{
+	display: block;
+	float: left;
+	outline: none;
+	border: 0;
+	font-size: 14/96rem;
+	background-color: #fff;
+	line-height: @form-input-height;
+	height: @form-input-height;
+	border: 1/96rem solid @form-input-border;
+	.transition(all,ease-in-out);
+	&:focus{
+		border: 1/96rem solid @form-input-focus-border;
+	}
+}
+select{
+	.bi(~'down.png');
+    background-size: 20/96rem 20/96rem;
+    background-position: 96% center;
+    background-repeat: no-repeat;
+    padding: 0/96rem 15% 0/96rem 5%;
+}

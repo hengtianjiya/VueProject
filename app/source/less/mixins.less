@@ -1,0 +1,48 @@
+// Box sizing
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+     -moz-box-sizing: @boxmodel;
+          box-sizing: @boxmodel;
+}
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+          box-shadow: @shadow;
+}
+
+.rounded-corners (@radius: 4px) {
+  -webkit-border-radius: @radius;
+	 -moz-border-radius: @radius;
+		  border-radius: @radius;
+}
+
+//background-color
+.bi(@image){
+	background-image:url(~'@{url}@{image}');
+}
+
+//transition
+.transition(@transition,@type){
+    -webkit-transition: @transition 500ms @type;
+    -moz-transition: @transition 500ms @type;
+    -o-transition: @transition 500ms @type;
+    transition: @transition 500ms @type;
+}
+
+//transition
+.animation(@time){
+	-webkit-animation-duration: @time;
+	animation-duration: @time;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+//.generate-columns(76);
+//循环生成图片
+.generate-columns(@n, @img, @type, @i: 1) when (@i =< @n) {
+    .container@{i} {
+        background: url("@url@img@{i}.@type") no-repeat;
+        background-size: 100% 100%;
+    }
+    .generate-columns(@n, @img, @type, (@i + 1));
+}

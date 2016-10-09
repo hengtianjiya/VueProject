@@ -1,0 +1,71 @@
+.card{
+	width: 100%;
+	height: 220/96rem;
+	border: 1px solid #dcdcdc;
+	.card-content{
+		position: relative;
+		width: 100%;
+		height: 150/96rem;
+		padding: 15/96rem 30/96rem;
+		.l,
+		.f{
+			position: relative;
+			line-height: 20/96rem;
+			&.o{
+				margin-top: 30/96rem;
+				margin-bottom: 30/96rem;
+			}
+		}
+		.f{
+			position: absolute;
+			top:  15/96rem;
+			right: 30/96rem;
+			margin-top: 0;
+			.text-color-bg{
+				color: #fff;
+				padding:0 2/96rem;
+			}
+		}
+		.t{
+			position: absolute;
+			width: 20/96rem;
+			height: 20/96rem;
+			border: 10/96rem solid #f44336;
+			border-left: 10/96rem solid transparent;
+			border-bottom: 10/96rem solid transparent;
+			top: 0;
+			right: 0;
+		}
+	}
+	.card-footer{
+		position: relative;
+		width: 100%;
+		height: 70/96rem;
+		border-top : 1px solid #dcdcdc;
+		padding: 15/96rem 30/96rem;
+		.progress{
+			.p{
+				height: 20/96rem;
+				line-height: 10/96rem;
+				font-size: 14/96rem;
+				padding: 5/96rem 0;
+				>span{
+					display: inline-block;
+					width: 200/96rem;
+					height: 10/96rem;
+					background-color: #c8c8c8;
+					>span{
+						display: inline-block;
+						width: 10%;
+						height: 10/96rem;
+						background-color: #969696;
+					}
+				}
+				em{
+					display: inline-block;
+					text-indent: 10/96rem;
+				}
+			}
+		}
+	}
+}

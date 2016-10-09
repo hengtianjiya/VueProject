@@ -1,0 +1,46 @@
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 14/96rem;
+}
+.table {
+	width: 100%;
+	background-color: #fff;
+	.box-sizing(border-box);
+	thead{
+		>tr{
+			line-height: 60/96rem;
+			height: 60/96rem;
+			border: 1/96rem solid #dcdcdc;
+			>th{
+				padding: 0 8/96rem;
+				text-align: left;
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+			    line-height: 60/96rem;
+			    height: 60/96rem;
+			    vertical-align: middle;
+			    border-bottom: 1/96rem solid #dcdcdc;
+			    .checkbox{
+			    	position: relative;
+			    	top: 5/96rem;
+			    }
+			}
+		}
+		>tr{
+			>td{
+				padding: 0 8/96rem;
+			}
+			&:hover{
+				background-color: @body-bg;
+			}
+		}
+	}
+	select{
+		border: 0;
+	}
+}

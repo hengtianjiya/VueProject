@@ -1,0 +1,20 @@
+div{
+	&.toast{
+		position: fixed;
+		line-height: @toast-height;
+		text-align: center;
+		font-size: @font-main-mask-short;
+		height: 0;
+		width: 100%;
+		top: 0;
+		left: 0;
+		&.success{
+			background-color: @toast-success;
+			color: #fff;
+		}
+		&.error{
+			background-color: @toast-error;
+			color: #fff;
+		}
+	}
+}

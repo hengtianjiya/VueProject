@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  .box-sizing(border-box);
+}
+*:before, 
+*:after {
+  .box-sizing(border-box);
+}
+html{
+  font-size: @font-size-base;
+}
+body {
+  background-color: @body-bg;
+  font-size: @font-size-base;
+  font-family: @font-family-base;
+}
+body, 
+a { color: @text-color; }
+a { text-decoration: @link-hover-decoration; }
+a:hover { color: @gray-dark; }
+em, 
+i { font-style: normal; }
+strong { font-weight: normal; }
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 { font-weight: normal; }
+input {
+  font-size: @font-size-base;
+  font-family: @font-family-base;
+  background: none;
+  border-radius: 0;
+}
+input[type='text'], 
+input[type='submit'], 
+input[type='button'], 
+input[type='date'], 
+textarea,
+select{
+  appearance:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+}
+input[type='checkbox'],
+input[type='radio']{
+  appearance:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+.text-color{
+  color: @text-color;
+}
+.text-color-bg{
+  background-color: @text-color;
+}
+.hover-color{
+  color: @hover-color;
+}
+.hover-color-bg{
+  background-color: @hover-color;
+}
+.active-color{
+  color: @active-color;
+}
+.active-color-bg{
+  background-color: @active-color;
+}
+
+.bg-color{
+  color: @body-bg;
+}
+.bg-color-bg{
+  background-color: @body-bg;
+}
+.main-sep-color{
+  color:@main-sep-color;
+}
+.main-sep-bg{
+  background-color:@main-sep-color;
+}
+.sub-sep-color{
+  color:@sub-sep-color;
+}
+.sub-sep-bg{
+  background-color:@sub-sep-color;
+}
+.mask-color{
+  color:@mask-color;
+}
+.mask-bg{
+  background-color:@mask-color;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.oh{
+  overflow: hidden;
+}
+.clear{
+  clear: both;
+}
